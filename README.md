@@ -39,42 +39,42 @@ The "Movie RESTful API Using Express and TypeScript" project is a backend applic
 ## API Documentation
 
 1. Welcome Message
-    URL: /
-    Method: GET
-    Description: Get a welcome message.
-    Response: Welcome message.
+    - URL: /
+    - Method: GET
+    - Description: Get a welcome message.
+    - Response: Welcome message.
 
 2. Get All Movies
-    URL: /movies
-    Method: GET
-    Description: Get a list of all movies.
-    Response: Array of movie objects.
+    - URL: /movies
+    - Method: GET
+    - Description: Get a list of all movies.
+    - Response: Array of movie objects.
 
 3. Get Movie by ID
-    URL: /movies/:id
-    Method: GET
-    Description: Get a movie by its IMDb ID.
-    Response: Array containing the movie object.
+    - URL: /movies/:id
+    - Method: GET
+    - Description: Get a movie by its IMDb ID.
+    - Response: Array containing the movie object.
 
 4. Add a Movie
-    URL: /movies
-    Method: POST
-    Description: Add a new movie to the database.
-    Request Body: Movie object json (title, year, imdbid, type, poster).
+    - URL: /movies
+    - Method: POST
+    - Description: Add a new movie to the database.
+    - Request Body: Movie object json (title, year, imdbid, type, poster).
 
 5. Update a Movie
-    URL: /movies/:id
-    Method: PUT
-    Description: Update an existing movie by its IMDb ID.
-    Request Body: Updated movie object json (title, year, type, poster).
+    - URL: /movies/:id
+    - Method: PUT
+    - Description: Update an existing movie by its IMDb ID.
+    - Request Body: Updated movie object json (title, year, type, poster).
 
 6. Delete a Movie
-    URL: /movies/:id
-    Method: DELETE
-    Description: Delete a movie by its IMDb ID.
+    - URL: /movies/:id
+    - Method: DELETE
+    - Description: Delete a movie by its IMDb ID.
 
 7. Search for Movies by Title
-    URL: /movies/search/:title
-    Method: GET
-    Description: Search for movies by title (case-insensitive).
-    Response: Array of movie objects matching the search criteria.
+    - URL: /movies/search/:title
+    - Method: GET
+    - Description: Search for movies by title (case-insensitive).
+    - Response: Array of movie objects matching the search criteria.
