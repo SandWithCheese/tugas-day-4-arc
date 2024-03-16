@@ -1,15 +1,23 @@
-FROM postgres:latest
+# Use the official Node.js image
+FROM node:14
 
-# Set the environment variable
-ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=postgres
-ENV POSTGRES_DB=postgres
+# Set the working directory in the container
+WORKDIR /usr/src/app
 
-# Copy the SQL file to the container
-COPY ./movies.sql /docker-entrypoint-initdb.d/
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
 
-# Expose the port
-EXPOSE 5432
+# Install dependencies
+RUN npm install
 
-# Run the command
-CMD ["postgres"]
+# Copy the rest of the application code
+COPY . .
+
+# Compile TypeScript to JavaScript
+RUN npm run build
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["node", "dist/index.js"]

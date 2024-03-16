@@ -1,9 +1,9 @@
 CREATE TABLE IF NOT EXISTS "movies" (
-    "Title" TEXT,
-    "Year" TEXT,
-    "imdbID" TEXT,
-    "Type" TEXT,
-    "Poster" TEXT
+    "title" TEXT,
+    "year" TEXT,
+    "imdbid" TEXT,
+    "type" TEXT,
+    "poster" TEXT
 );
 INSERT INTO "movies" VALUES ('Pokémon: Detective Pikachu','2019','tt5884052','movie','https://m.media-amazon.com/images/M/MV5BMDkxNzRmNDYtMDY0OS00N2JhLTkzZWUtMWE3MzZkNDk1MmJiXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_SX300.jpg'),
 	('Pokémon','1997–2023','tt0168366','series','https://m.media-amazon.com/images/M/MV5BNDcwZDc2NTEtMzU0Ni00YTQyLWIyYTQtNTI3YjM0MzhmMmI4XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg'),
